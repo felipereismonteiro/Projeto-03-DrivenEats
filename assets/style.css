@@ -10,6 +10,7 @@
 html {
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 body {
@@ -33,12 +34,12 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 15px;
     -webkit-box-shadow: 1px 7px 3px -1px rgba(0,0,0,0.14); 
     box-shadow: 1px 7px 3px -1px rgba(0,0,0,0.14);
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 header .title {
@@ -58,26 +59,93 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-y: auto;
 }
 
 .container {
-    height: 70%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 720px;
+    margin-bottom: 100px;
 }
 
 nav .boxAnuncio {
     width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: scrool;
+}
+
+.boxAnuncio h1 {
+    font-size: 26px;
+}
+
+.texto {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.texto h1 { 
+    width: 100%;
+    font-size: 26px;
+}
+
+.containerFood {
+    width: 400%;
+    height: 200px;
+    display: flex;
+    margin: 0;
+}
+
+.food {
+    height: 200px;
+    width: 30%;
+    margin: 0 30px;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.foodImg {
+    display: flex;
+    justify-content: center;
+}
+
+.foodImg img {
+    width: 80%;
     height: 90px;
-    background-color: green;
+    border-radius: 10px;
+}
+
+.foodText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+.foodText:nth-child(1) {
+    font-size: 16px;
 }
 
 /*      footer      */
 
 footer {
     width: 100%;
-    height: 12%;
+    height: 15%;
     background-color: #FFFFFF;
     position: fixed;
     bottom: 0;
@@ -88,7 +156,7 @@ footer {
 }
 
 footer button{
-    width: 90%;
+    width: 85%;
     height: 60%;
     border-radius: 50px;
     background-color: #CBCBCB;
