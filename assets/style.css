@@ -101,20 +101,21 @@ nav .boxAnuncio {
 }
 
 .containerFood {
-    width: 400%;
-    height: 200px;
+    width: 450%;
+    height: 300px;
     display: flex;
     margin: 0;
 }
 
 .food {
-    height: 200px;
-    width: 30%;
+    height: 250px;
+    width: 50%;
     margin: 0 30px;
-    background-color: blue;
+    background-color: #FFFFFF;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 30px;
+    margin-top:20px;
 }
 
 .foodImg {
@@ -123,9 +124,10 @@ nav .boxAnuncio {
 }
 
 .foodImg img {
-    width: 80%;
-    height: 90px;
+    width: 90%;
+    height:auto;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .foodText {
@@ -136,6 +138,29 @@ nav .boxAnuncio {
     box-sizing: border-box;
     padding: 5px 10px;
 }
+
+.foodText p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.foodText p:nth-child(1) {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+.foodText p:nth-child(2) {
+    color: #A6A6A6;
+    font-size: 15px;
+}
+
+.foodText p:nth-child(3) {
+    color: #000000;
+    font-size: 16px;
+}
+
 
 .foodText:nth-child(1) {
     font-size: 16px;
