@@ -27,7 +27,7 @@ body {
 header {
     width: 100%;
     background-color: #CF2B2B;
-    height: 12%;
+    height: 90px;
     position: fixed;
     color: white;
     display: flex;
@@ -67,8 +67,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 540px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
+    margin-top: 550px;
 }
 
 nav .boxAnuncio {
@@ -170,7 +170,7 @@ nav .boxAnuncio {
 
 footer {
     width: 100%;
-    height: 15%;
+    height: 120px;
     background-color: #FFFFFF;
     position: fixed;
     bottom: 0;
