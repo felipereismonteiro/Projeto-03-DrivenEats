@@ -119,6 +119,8 @@ function finalizarPedido() {
 }
 
 function pedir() {
+    let nome = prompt("Digite seu nome")
+    let endereco = prompt("Digite seu endereco")
 
     const firstProduct = document.querySelector(".selected .nomeDoProduto").innerHTML
     const secondProduct = document.querySelector(".selected2 .nomeDoProduto").innerHTML
@@ -134,7 +136,10 @@ function pedir() {
     - Prato: ${firstProduct}
     - Bebida: ${secondProduct}
     - Sobremesa: ${thirdProduct}
-    Total: R$ ${soma.toFixed(2)}`
+    Total: R$ ${soma.toFixed(2)}
+    
+    Nome: ${nome}
+    Endereço: ${endereco}`
     window.open('https://wa.me/5511957623832?text=' + encodeURIComponent(mensagem))
 }
 
