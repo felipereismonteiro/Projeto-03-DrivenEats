@@ -184,11 +184,11 @@ nav .boxAnuncio {
     font-size: 17px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
-    color: #333333;
+    color: #000000;
 }
 
 .foodText p:nth-child(2) {
-    color: #A6A6A6;
+    color: #332f2f;
     font-size: 15px;
 }
 
