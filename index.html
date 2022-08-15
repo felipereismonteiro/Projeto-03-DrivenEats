@@ -14,13 +14,32 @@
     </header> 
     <div class="terminar">
             <div class="confirme title"><h1>Confirme seu pedido</h1></div><!--confirme-->
-            <div class="mid"></div><!--mid-->
-            <div class="tudoCerto"></div><!--tudoCerto-->
-            <div class="podePedir"></div><!--podePedir-->
+            <div class="mid">
+                <div class="nomeDoPedido title">
+                    <h1 class="pedido1">Frango</h1>
+                    <h1 class="pedido2">Coca</h1>
+                    <h1 class="pedido3">pudim</h1>
+                    <h1>TOTAL</h1>
+                </div><!--nomeDoPedido-->
+                <div class="precoDoPedido title">
+                    <h1 class="preco1"></h1>
+                    <h1 class="preco2"></h1>
+                    <h1 class="preco3"></h1>
+                    <h1 class="total">R$ </h1>
+                </div><!--precoDoPedido-->
+            </div><!--mid-->
+            <a target="_blank" class="tudoCerto">
+                <button type="button" class="title" onClick="pedir()"></h1>Tudo certo, pode pedir!</h1></button>
+            </a><!--tudoCerto-->
+            <div class="podePedir">
+                <button type="button" class="title" onClick="cancelarPedido()">
+                    <h1>Cancelar</h1>
+                </button>
+            </div><!--podePedir-->
     </div><!--terminar-->
-    <div class="finalizarPedido">
-        
-    </div><!--finalizarPedido-->
+    <a class="finalizarPedido">
+
+    </a><!--finalizarPedido-->
     <nav>
         <div class="container">
             <div class="texto">
@@ -33,9 +52,9 @@
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.90</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div><!--foodText--> 
                     </div><!--food-->
@@ -44,77 +63,77 @@
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                 </div><!--containerFood-->
             </div><!--boxAnuncio-->
@@ -128,88 +147,88 @@
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida2(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida2(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida2(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida2(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida2(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida2(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida2(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                 </div><!--containerFood-->
             </div><!--boxAnuncio-->
@@ -223,88 +242,88 @@
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida3(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida3(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida3(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida3(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida3(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida3(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                     <div class="food" onClick="selecionarComida3(this)">
                         <div class="foodImg">
                             <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/97274750_2977744782263172_2196711562419372032_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=mO1uLYCYsHAAX_KfTUU&_nc_oc=AQmVGHmwPm5h4bBoFgtk0SRlod3zaLP2DEjH4mw_V7-YiqnySglNQm7ezX7BW_mobpaZrdKNH8tylA-GLyUUycUk&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-OmP9qG-SqH4A4__qy0OU6o2JQ2UIcP1wqVT93kLDrng&oe=631D61C4" alt="Batata frita">
                         </div><!--foodImg-->
                         <div class="foodText">
-                            <p>Picanhas Fritas</p>
+                            <p class="nomeDoProduto">Picanhas Fritas</p>
                             <p>Picanha com fritas, tem como ser melhor???</p>
-                            <p>R$ 25,00</p>
+                            <p>R$ <span class="precoDoProduto">25.00</span></p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div><!--foodText--> 
+                        </div><!--foodText-->  
                     </div><!--food-->
                 </div><!--containerFood-->
             </div><!--boxAnuncio-->
